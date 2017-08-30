@@ -9,10 +9,10 @@ namespace Kaffe
     public abstract class Kaffe
     {
 
-        public abstract int pris();
+        public abstract int Pris();
        
 
-        public virtual string styrke()
+        public virtual string Styrke()
         {
             return "Stærk";
         }

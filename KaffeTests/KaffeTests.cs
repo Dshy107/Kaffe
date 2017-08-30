@@ -17,7 +17,7 @@ namespace Kaffe.Tests
             //Arrange
             var kaffe = new SortKaffe();
             //Act
-            int pris = kaffe.pris();
+            int pris = kaffe.Pris();
             //Assert
             Assert.AreEqual(20, pris);
         }
@@ -27,7 +27,7 @@ namespace Kaffe.Tests
         {
             var kaffe = new SortKaffe();
 
-            string styrke = kaffe.styrke();
+            string styrke = kaffe.Styrke();
 
             Assert.AreEqual("Stærk", styrke);
         }
