@@ -31,5 +31,33 @@ namespace Kaffe.Tests
 
             Assert.AreEqual("Stærk", styrke);
         }
+
+        [TestMethod()]
+        public void styrkeTestKaffeListe()
+        {
+            //Arrange
+            var kaffeListe = new List<Imælk>();
+            var cortado = new Cortado();
+            var latte = new Latte();
+            var sortKaffe = new SortKaffe();
+            kaffeListe.Add(cortado);
+            kaffeListe.Add(latte);
+            //kaffeListe.Add(sortKaffe);
+
+            //Act
+            int Total = 0;
+            foreach (var kaffeitem in kaffeListe)
+            {
+                Total += kaffeitem.M1Mælk();
+                //if (kaffeitem is Cortado)
+                //{
+                //    var cortardo2 = kaffeitem as Cortado;
+                //}
+                //kaffeitem.M1Mælk();
+            }
+
+            //Assert
+            Assert.AreEqual(145, Total);
+        }
     }
 }
